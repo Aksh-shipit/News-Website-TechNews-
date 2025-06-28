@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    flex-wrap: wrap; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-inline: 25px;
+    font-size: 19px;
+}
+
+.nav-links li:hover {
+    color: rgb(0, 140, 255);
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.searchBar input {
+    width: 220px;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    margin-inline: 5px;
+}
+
+.searchBar button {
+    width: 60px;
+    height: 31px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#searchResults {
+    margin-top: 20px;
+    padding: 16px;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.article h3 {
+    font-size: 20px;
+}
+
+.article p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .logo h1 {
+        font-size: 1.5rem; 
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center; 
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px;
+        font-size: 16px; 
+    }
+
+    .searchBar {
+        justify-content: center; 
+        margin-top: 10px;
+    }
+
+    .searchBar input {
+        width: 150px;
+        margin-bottom: 10px; 
+    }
+
+    .searchBar button {
+        width: 50px; /* Smaller button */
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li {
+        font-size: 14px; 
+    }
+
+    .searchBar input {
+        width: 120px; 
+    }
+
+    .searchBar button {
+        width: 40px; 
+        height: 28px;
+    }
+}
